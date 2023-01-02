@@ -83,14 +83,14 @@ WSGI_APPLICATION = 'django_permissions.wsgi.application'
 # }
 
 
-# connect django to postgres 
+# connect django app that containerized on docker
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'book',
-        'USER': 'morad',
-        'PASSWORD': '6235',
-        'HOST': '127.0.0.1',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
